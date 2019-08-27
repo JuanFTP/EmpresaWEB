@@ -169,7 +169,6 @@ section {
 	background-color: #EA0107;
 }
 
-<<<<<<< HEAD
 .red {
 	color: red;
 }
@@ -185,12 +184,6 @@ section {
 .yellow{
 	color: yellow;
 }
-=======
-	.primary_inverter {
-		color: #EA0107;
-		background-color: #FAFAFA;
-	}
->>>>>>> 1ce13f639ee6fefb47532a2a0ff9cce8183ea8bf
 
 /*Botones*/
 .button {
@@ -232,10 +225,6 @@ section {
 		box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
 	}
 
-<<<<<<< HEAD
-	/*Clases Chris*/	
-
-
 	.peliculas_cuadradas{
 		/*Contendor del 100% peliculas*/
 		display: block;
@@ -269,15 +258,6 @@ section {
 						padding: 10px 0px;
 					}
 
-
-
-
-
-
-
-
-
-=======
 /*Nuestros proyectos*/
 .info_squares {
 	margin: 80px 0px;
@@ -302,8 +282,6 @@ section {
 		padding: 5px 15px;
 		transition: all ease 0.25s;
 	}
->>>>>>> 1ce13f639ee6fefb47532a2a0ff9cce8183ea8bf
-
 		.info_squares .square_info a.emphasis:hover {
 			color: #FAFAFA;
 			background-color: red;
