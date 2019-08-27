@@ -27,6 +27,19 @@ body {
 	margin: auto;
 }
 
+/*Alineación*/
+.align_text_center {
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+}
+
+	.grid.x3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
 /*Textos*/
 h1 {
 	font-size: 60px;
@@ -156,6 +169,7 @@ section {
 	background-color: #EA0107;
 }
 
+<<<<<<< HEAD
 .red {
 	color: red;
 }
@@ -171,6 +185,12 @@ section {
 .yellow{
 	color: yellow;
 }
+=======
+	.primary_inverter {
+		color: #EA0107;
+		background-color: #FAFAFA;
+	}
+>>>>>>> 1ce13f639ee6fefb47532a2a0ff9cce8183ea8bf
 
 /*Botones*/
 .button {
@@ -212,6 +232,7 @@ section {
 		box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
 	}
 
+<<<<<<< HEAD
 	/*Clases Chris*/	
 
 
@@ -256,5 +277,34 @@ section {
 
 
 
+=======
+/*Nuestros proyectos*/
+.info_squares {
+	margin: 80px 0px;
+}
 
-	/*Clases Juan*/
+	.info_squares .square_info {
+		display: block;
+	}
+
+	.info_squares .square_info .data {
+		font-size: 50px;
+		line-height: 60px;
+	}
+
+	.info_squares .square_info a.emphasis {
+		display: inline-block;
+		text-decoration: none;
+		color: inherit;
+		font-size: 20px;
+		margin-top: 20px;
+		border-radius: 15px;
+		padding: 5px 15px;
+		transition: all ease 0.25s;
+	}
+>>>>>>> 1ce13f639ee6fefb47532a2a0ff9cce8183ea8bf
+
+		.info_squares .square_info a.emphasis:hover {
+			color: #FAFAFA;
+			background-color: red;
+		}
