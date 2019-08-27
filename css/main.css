@@ -156,6 +156,22 @@ section {
 	background-color: #EA0107;
 }
 
+.red {
+	color: red;
+}
+
+.green{
+	color: green;
+}
+
+.blue{
+	color: blue;
+}
+
+.yellow{
+	color: yellow;
+}
+
 /*Botones*/
 .button {
 	display: inline-block;
@@ -196,6 +212,49 @@ section {
 		box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
 	}
 
-	/*Clases Chris*/
+	/*Clases Chris*/	
+
+
+	.peliculas_cuadradas{
+		/*Contendor del 100% peliculas*/
+		display: block;
+		width: 100%;
+		margin-top: 60px;
+	}
+
+		.peliculas_cuadradas .alinear_peliculas{
+			display: flex;
+			width: 100%;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+			.peliculas_cuadradas .alinear_peliculas .peliculas{
+				display: block;
+				flex-basis: 22%;
+				overflow: hidden;
+				border-radius: 10%;
+				box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
+			}
+
+				.peliculas_cuadradas .alinear_peliculas .peliculas img{
+					display: block;
+					width: 100%;
+				}
+
+					.peliculas_cuadradas .alinear_peliculas .peliculas .footer_card{
+						text-align: center;
+						font-weight: 700;
+						padding: 10px 0px;
+					}
+
+
+
+
+
+
+
+
+
 
 	/*Clases Juan*/
