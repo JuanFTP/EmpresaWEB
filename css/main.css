@@ -39,6 +39,10 @@ body {
 	.grid.x3 {
 		grid-template-columns: repeat(3, 1fr);
 	}
+	
+	.grid.x5 {
+		grid-template-columns: repeat(5, 1fr);
+	}
 
 /*Textos*/
 h1 {
@@ -258,6 +262,43 @@ section {
 						padding: 10px 0px;
 					}
 
+/*Inputs*/
+.box_input {
+	display: block;
+	width: 100%;
+	background-color: purple;
+	box-sizing: border-box;
+	height: 50px;
+	padding: 5px; 
+	border-radius: 10px;
+}
+
+	.box_input .aling_box_input {
+		display: inline-flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+		.box_input input {
+			display: flex;
+			width: 80%;
+			height: 40px;
+			border-top-left-radius: 10px;
+			border-bottom-left-radius: 10px;
+			outline: none;
+			border: none;
+			padding: 0px 10px 0px 10px;
+		}
+
+		.box_input span {
+			display: flex;
+			width: 20%;
+		}
+	
+	
+
+
 /*Nuestros proyectos*/
 .info_squares {
 	margin: 80px 0px;
@@ -285,4 +326,25 @@ section {
 		.info_squares .square_info a.emphasis:hover {
 			color: #FAFAFA;
 			background-color: red;
+		}
+
+/*Footer*/
+footer {
+	display: block;
+	padding: 80px;
+	border-radius: 40px;
+	color: #FAFAFA;
+	background-color: #EA0107;
+}
+
+	.column_data {
+		background-color: #444;
+	}
+
+		.column_data h3 {
+			font-size: 18px;
+		}
+
+		.column_data p {
+			font-size: 14px;
 		}
