@@ -247,8 +247,9 @@ section {
 		box-shadow: var(--box-shadow-standar);
 	}
 
+
+	/*Contendor del 100% peliculas*/
 	.peliculas_cuadradas{
-		/*Contendor del 100% peliculas*/
 		display: block;
 		width: 100%;
 		margin-top: 60px;
@@ -386,6 +387,46 @@ section {
 			color: var(--primary-white-color);
 			background-color: var(--primary-color);
 		}
+
+/*Why Choose Us*/
+.contenedor_anuncios{
+	display: block;
+	width: 100%;
+}
+
+	.contenedor_anuncios .partes_anuncios{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+		.contenedor_anuncios .partes_anuncios .imagen_anuncios{
+			display: flex;
+			width: 40%;
+			overflow: hidden;
+		}
+		
+		.contenedor_anuncios .partes_anuncios .imagen_anuncios img{
+			display: block;
+			width: 100%;
+		}
+
+		.contenedor_anuncios .partes_anuncios .anuncios{
+			display: flex;
+			width: 50%;
+			overflow: hidden;
+		}
+
+
+		
+
+
+
+
+
+
+	
 
 /*Footer*/
 footer {
