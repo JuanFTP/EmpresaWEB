@@ -22,6 +22,24 @@ body {
     background-color: #525252;
 }
 
+/*Root*/
+:root {
+	--primary-color: #EA0107;
+	--primary-white-color: #FAFAFA;
+	--primary-white-full-color: #FFFFFF;
+	--contraste-light-color: #E0E0E0;
+	--dark-light-color: #444444;
+	--box-shadow-standar: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+	--border-small-radius: 3px;
+	--border-medium-radius: 10px;
+	--border-medium-most-radius: 15px;
+	--border-big-radius: 20px;
+	--border-bigger-radius: 30px;
+	--border-most-radius: 40px;
+	--border-full-radius: 100%;
+	--transition-standar: all ease 0.25s;
+}
+
 .content {
 	max-width: 80%;
 	margin: auto;
@@ -80,8 +98,8 @@ header {
 	width: 100%;
 	height: 90px;
 	line-height: 90px;
-	color: #fafafa;
-	background-color: #EA0107;
+	color: var(--primary-white-color);
+	background-color: var(--primary-color);
 }
 
 	header .left {
@@ -109,8 +127,8 @@ header {
 			color: inherit;
 			margin: 0px 2px;
 			padding: 5px 10px;
-			border-radius: 3px;
-			transition: all ease 0.4s;
+			border-radius: var(--border-small-radius);
+			transition: var(--transition-standar);
 		}
 
 			header .right nav a:first-child {
@@ -122,14 +140,14 @@ header {
 			}
 
 			header .right nav a:hover {
-				color: #EA0107;
-				background-color: #FAFAFA;
-				box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+				color: var(--primary-color);
+				background-color: var(--primary-white-color);
+				box-shadow: var(--box-shadow-standar);
 			}
 
 /*Secciones*/
 section {
-	background-color: #FFF;
+	background-color: var(--primary-white-full-color);
 	padding: 40px 0px;
 }
 
@@ -140,9 +158,9 @@ section {
 		.big_banner .content_img {
 			width: 95%;
 			height: 100%;
-			border-top-right-radius: 30px;
-			border-bottom-right-radius: 30px;
-			box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.1);
+			border-top-right-radius: var(--border-bigger-radius);
+			border-bottom-right-radius: var(--border-bigger-radius);
+			box-shadow: var(--box-shadow-standar);
 
 			background-image: url(../img/banner_01.jpg);
 			background-attachment: center center;
@@ -169,8 +187,8 @@ section {
 
 /*Colores*/
 .primary {
-	color: #FAFAFA;
-	background-color: #EA0107;
+	color: var(--primary-white-color);
+	background-color: var(--primary-color);
 }
 
 .red {
@@ -195,8 +213,8 @@ section {
 	height: 40px;
 	line-height: 40px;
 	padding: 0px 15px;
-	border-radius: 20px;
-	transition: all ease 0.25s;
+	border-radius: var(--border-big-radius);
+	transition: var(--transition-standar);
 	font-weight: 700;
 }
 
@@ -220,13 +238,13 @@ section {
 				line-height: 30px;
 				height: 30px;
 				width: 30px;
-				color: #EA0107;
+				color: var(--primary-color);
 				border-radius: 15px;
-				background-color: #fafafa;
+				background-color: var(--primary-white-color);
 			}
 
 	.button:hover {
-		box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.25);
+		box-shadow: var(--box-shadow-standar);
 	}
 
 	.peliculas_cuadradas{
@@ -247,8 +265,8 @@ section {
 				display: block;
 				flex-basis: 22%;
 				overflow: hidden;
-				border-radius: 10%;
-				box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.2);
+				border-radius: var(--border-big-radius);
+				box-shadow: var(--box-shadow-standar);
 			}
 
 				.peliculas_cuadradas .alinear_peliculas .peliculas img{
@@ -266,11 +284,11 @@ section {
 .box_input {
 	display: block;
 	width: 100%;
-	background-color: purple;
+	background-color: var(--primary-white-color);
 	box-sizing: border-box;
 	height: 50px;
 	padding: 5px; 
-	border-radius: 10px;
+	border-radius: var(--border-medium-radius);
 }
 
 	.box_input .aling_box_input {
@@ -281,11 +299,11 @@ section {
 	}
 
 		.box_input input {
+			background-color: transparent;
 			display: flex;
 			width: 80%;
 			height: 40px;
-			border-top-left-radius: 10px;
-			border-bottom-left-radius: 10px;
+			border-radius: 10px;
 			outline: none;
 			border: none;
 			padding: 0px 10px 0px 10px;
@@ -294,10 +312,51 @@ section {
 		.box_input span {
 			display: flex;
 			width: 20%;
+			background-color: var(--primary-color);
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: var(--border-medium-radius);
+			cursor: pointer;
+			user-select: none;
+			transition: var(--transition-standar);
 		}
-	
-	
 
+			.box_input span i {
+				display: block;
+				width: 100%;
+				line-height: 40px;
+			}
+
+			.box_input span:hover {
+				box-shadow: var(--box-shadow-standar);
+			}
+
+/*Estilos de líneas de íconos*/
+.line_icons {
+	display: block;
+	width: 100%;
+}
+
+	.line_icons span.icon_circle {
+		text-align: center;
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		width: 40px;
+		background-color: var(--primary-white-color);
+		border-radius: var(--border-full-radius);
+		color: var(--primary-color);
+		font-size: 20px;
+		cursor: pointer;
+		user-select: none;
+		transition: var(--transition-standar);
+		margin-right: 3px;
+	}
+
+		.line_icons	span.icon_circle:hover {
+			box-shadow: var(--box-shadow-standar);
+		}
 
 /*Nuestros proyectos*/
 .info_squares {
@@ -319,26 +378,28 @@ section {
 		color: inherit;
 		font-size: 20px;
 		margin-top: 20px;
-		border-radius: 15px;
+		border-radius: var(--border-medium-most-radius);
 		padding: 5px 15px;
-		transition: all ease 0.25s;
+		transition: var(--transition-standar);
 	}
 		.info_squares .square_info a.emphasis:hover {
-			color: #FAFAFA;
-			background-color: red;
+			color: var(--primary-white-color);
+			background-color: var(--primary-color);
 		}
 
 /*Footer*/
 footer {
 	display: block;
 	padding: 80px;
-	border-radius: 40px;
-	color: #FAFAFA;
-	background-color: #EA0107;
+	border-radius: var(--border-most-radius);
+	color: var(--primary-white-color);
+	background-color: var(--primary-color);
 }
 
-	.column_data {
-		background-color: #444;
+	.column_data a {
+		/*Settings footer data*/
+		text-decoration: none;
+		color: inherit;
 	}
 
 		.column_data h3 {
@@ -348,3 +409,23 @@ footer {
 		.column_data p {
 			font-size: 14px;
 		}
+
+/*Section & Copy*/
+section.copy {
+	background-color: var(--contraste-light-color);
+	color: var(--dark-light-color);
+	text-align: center;
+	font-size: 14px;
+}
+
+	section.copy .align_flex {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	section.copy .align_flex p {
+		font-size: 14px;
+		line-height: 14px;
+	}
