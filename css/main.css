@@ -398,25 +398,97 @@ section {
 		display: flex;
 		width: 100%;
 		justify-content: space-between;
-		align-items: center;
 	}
-
 		.contenedor_anuncios .partes_anuncios .imagen_anuncios{
-			display: flex;
-			width: 40%;
-			overflow: hidden;
-		}
-		
-		.contenedor_anuncios .partes_anuncios .imagen_anuncios img{
-			display: block;
-			width: 100%;
-		}
-
-		.contenedor_anuncios .partes_anuncios .anuncios{
 			display: flex;
 			width: 50%;
 			overflow: hidden;
+			border-radius: var(--border-medium-most-radius);
+			box-shadow: var(--box-shadow-standar);
 		}
+
+		.contenedor_anuncios .partes_anuncios .imagen_anuncios img{
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-color: #EA0107;
+		}
+
+		.contenedor_anuncios .partes_anuncios .anuncios{
+			margin-left: 40px;
+		}
+
+		.contenedor_anuncios .partes_anuncios .anuncios{
+			display: block;
+			width: 50%;
+		}
+
+		.contenedor_anuncios .partes_anuncios .anuncios .header-anuncios{
+			display: block;
+			text-align: left;
+		}
+		
+		.contenedor_anuncios .partes_anuncios .anuncios .header-anuncios p{
+			opacity: 0.6;
+		}
+
+	
+		.anuncios_derecha {
+			display: block;
+		}
+
+			.anuncio {
+				display: block;
+				height: 110px;
+				box-shadow: var(--box-shadow-standar);
+				border-radius: var(--border-big-radius);
+				overflow: hidden;
+			}
+
+				.anuncio .anun_align {
+					display: flex;
+					width: 100%;
+					height: 110px;
+				}
+
+				.anuncio .anun_align .icon_ads {
+					display: flex;
+					width: 80px;
+					line-height: 100%;
+					height: 110px;
+				}
+
+					.anuncio .anun_align .icon_ads i {
+						display: block;
+						width: 100%;
+						height: 100%;
+						line-height: 110px;
+						font-size: 35px;
+					}
+
+				.anuncio .anun_align .info_ads {
+					display: block;
+					width: calc(100% - 80px);
+					padding: 20px;
+					text-align: left;
+					overflow: hidden;
+				}
+
+					.anuncio .anun_align .info_ads h3 {
+						display: block;
+						font-size: 15px;
+						line-height: 20px;
+						margin: 0px;
+					}
+
+					.anuncio .anun_align .info_ads p {
+						display: block;
+						font-size: 13px;
+					}
+
+
+
+
 
 
 		
