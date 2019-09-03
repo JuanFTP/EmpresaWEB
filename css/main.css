@@ -439,10 +439,11 @@ section {
 
 			.anuncio {
 				display: block;
-				height: 110px;
+				height: 100px;
 				box-shadow: var(--box-shadow-standar);
 				border-radius: var(--border-big-radius);
 				overflow: hidden;
+				margin-bottom: 30px;
 			}
 
 				.anuncio .anun_align {
@@ -453,7 +454,7 @@ section {
 
 				.anuncio .anun_align .icon_ads {
 					display: flex;
-					width: 80px;
+					width: 100px;
 					line-height: 100%;
 					height: 110px;
 				}
@@ -463,27 +464,29 @@ section {
 						width: 100%;
 						height: 100%;
 						line-height: 110px;
-						font-size: 35px;
+						font-size: 45px;
+						color: #EA0107;
 					}
 
 				.anuncio .anun_align .info_ads {
 					display: block;
-					width: calc(100% - 80px);
-					padding: 20px;
+					width: calc(100% - 100px);
+					padding: 10px;
 					text-align: left;
 					overflow: hidden;
 				}
 
 					.anuncio .anun_align .info_ads h3 {
 						display: block;
-						font-size: 15px;
+						font-size: 20px;
 						line-height: 20px;
 						margin: 0px;
 					}
 
 					.anuncio .anun_align .info_ads p {
 						display: block;
-						font-size: 13px;
+						font-size: 15px;
+						margin-top: 10px;
 					}
 
 
